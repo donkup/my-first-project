@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Menu } from './modules/Menu';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-first-project';
+  public menu:Menu;
+
+
+  public constructor(){
+    this.menu= new Menu('menu')
+  } 
 }
