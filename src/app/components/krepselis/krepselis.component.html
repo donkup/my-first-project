@@ -1,0 +1,9 @@
+<p>uzsakytu prekiu sarasas</p>
+<div>
+    Krepselyje yra : {{krepselioKiekis()}}
+</div>
+<div>
+    <div *ngFor="let preke of krepselioTurinys()">
+        {{preke.name}}, {{preke.count}}
+    </div>
+</div>

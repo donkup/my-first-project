@@ -1,0 +1,8 @@
+<div>
+    <h4>{{produktas?.name}}</h4>
+    <div>Kaina : {{produktas?.price}}</div>
+    <div> Uzsakoma: {{produktas?.count}}</div>
+    <button (click)="produktas?.addTo()">UZSAKYTI</button>
+    <button (click)="produktas?.delFrom()" [disabled]="!produktas?.krepselyje()">ISTRINTI</button>
+    <hr>
+</div>

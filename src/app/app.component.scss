@@ -1,24 +1,5 @@
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-.pavadinimas {
-  text-align: center;
-  font-size: 50px;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-.pn {
-  text-align: center;
-}
-.ribs {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-.buttons {
-  text-align: center;
+button {
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 50%;
 }
