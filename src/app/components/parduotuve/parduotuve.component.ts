@@ -8,11 +8,12 @@ import { PrekeComponent } from '../preke/preke.component';
   styleUrls: ['./parduotuve.component.scss']
 })
 export class ParduotuveComponent implements OnInit {
-  public prekes: Preke[] = [];
+public prekes: Preke[] = [];
+
 
   constructor() {
-    this.prekes.push(new Preke("sonkauliai", 15))
-    this.prekes.push(new Preke("midijos", 25))
+    this.prekes.push(new Preke("sonkauliai", 15,"assets/img/ribs.png"))
+    this.prekes.push(new Preke("midijos", 25,'assets/img/midijos.png'))
    }
 
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 <div>
     <h4>{{produktas?.name}}</h4>
+    <img class="img" src="{{produktas?.img}}" alt="produktas?.pavadinimas">
     <div>Kaina : {{produktas?.price}}</div>
     <div> Uzsakoma: {{produktas?.count}}</div>
     <button class="btn" (click)="produktas?.addTo()">UZSAKYTI</button>

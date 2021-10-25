@@ -1,8 +1,12 @@
 export class Preke {
-       public count:number =0;
-    
-    public constructor(public name:string,public price:number){
-        
+       public count:number = 0;
+       
+     
+    public constructor(
+        public name:string,
+        public price:number,
+        public img?: string
+        ){        
     }
     
     public addTo():number{
