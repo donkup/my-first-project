@@ -1,9 +1,11 @@
 <p>uzsakytu prekiu sarasas</p>
 <div>
     Krepselyje yra : {{krepselioKiekis()}}
+    <button class="btn" *ngIf="krepselioKiekis()!=0" (click)="pakeistiRodyma()">{{rodomosPrekes?"Slepti krepseli":"Rodyti krepseli"}}</button>
 </div>
-<div>
-    <div *ngFor="let preke of krepselioTurinys()">
-        {{preke.name}}, {{preke.count}}
+<div *ngIf="rodomosPrekes">
+    <div>
+        <div *ngFor="let preke of krepselioTurinys()">
+            {{preke.name}}, {{preke.count}}
+        </div>
     </div>
-</div>

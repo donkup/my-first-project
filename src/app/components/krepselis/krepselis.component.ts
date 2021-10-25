@@ -10,6 +10,7 @@ export class KrepselisComponent implements OnInit {
   @Input()
   public prekes?: Preke[];
 
+    public rodomosPrekes: boolean = false;
     constructor() { }
 
   ngOnInit(): void {
@@ -31,6 +32,9 @@ export class KrepselisComponent implements OnInit {
       }; 
     })
     return krepselioPrekes;
+  }
+  public pakeistiRodyma(){
+    this.rodomosPrekes = !this.rodomosPrekes;
   }
 
 }
